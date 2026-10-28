@@ -40,6 +40,7 @@
             android:background="#00BCD4"
             android:text="Trừ sau khi delay 1s"/>
         <TextView
+            android:id="@+id/tru"
             android:layout_weight="1"
             android:layout_width="100dp"
             android:layout_height="50dp"
@@ -60,6 +61,7 @@
             android:background="#00BCD4"
             android:text="Nhân 2 sau khi delay 5s"/>
         <TextView
+            android:id="@+id/nhan"
             android:layout_weight="1"
             android:layout_width="100dp"
             android:layout_height="50dp"
@@ -80,6 +82,7 @@
             android:background="#00BCD4"
             android:text="Random số ngẫu nhiên mỗi 3s"/>
         <TextView
+            android:id="@+id/random"
             android:layout_weight="1"
             android:layout_width="100dp"
             android:layout_height="50dp"
@@ -93,11 +96,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:id="@+id/dungCong"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Dừng cộng"/>
         <Button
+            android:id="@+id/dungtru"
             android:layout_weight="1"
             android:layout_marginStart="16dp"
             android:layout_width="0dp"
@@ -110,11 +115,13 @@
         android:orientation="horizontal"
         >
         <Button
+            android:id="@+id/dungnhan"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Dừng nhân"/>
         <Button
+            android:id="@+id/dungrandom"
             android:layout_weight="1"
             android:layout_marginStart="16dp"
             android:layout_width="0dp"
