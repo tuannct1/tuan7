@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".bai2.MainActivity"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             android:background="#00BCD4"
             android:text="Cộng sau khi delay 1s"/>
         <TextView
-            android:id="@+id/cong"
+            android:id="@+id/tvAdd"
             android:layout_weight="1"
             android:layout_width="100dp"
             android:layout_height="50dp"
@@ -40,7 +40,7 @@
             android:background="#00BCD4"
             android:text="Trừ sau khi delay 1s"/>
         <TextView
-            android:id="@+id/tru"
+            android:id="@+id/tvDeduct"
             android:layout_weight="1"
             android:layout_width="100dp"
             android:layout_height="50dp"
@@ -61,7 +61,7 @@
             android:background="#00BCD4"
             android:text="Nhân 2 sau khi delay 5s"/>
         <TextView
-            android:id="@+id/nhan"
+            android:id="@+id/tvMultiplication"
             android:layout_weight="1"
             android:layout_width="100dp"
             android:layout_height="50dp"
@@ -82,7 +82,7 @@
             android:background="#00BCD4"
             android:text="Random số ngẫu nhiên mỗi 3s"/>
         <TextView
-            android:id="@+id/random"
+            android:id="@+id/tvRandom"
             android:layout_weight="1"
             android:layout_width="100dp"
             android:layout_height="50dp"
@@ -96,18 +96,35 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/dungCong"
+            android:id="@+id/btnStopAdd"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:visibility="visible"
             android:text="Dừng cộng"/>
         <Button
-            android:id="@+id/dungtru"
+            android:id="@+id/btnReadd"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Chạy lại cộng"/>
+        <Button
+            android:id="@+id/btnStopDeduct"
             android:layout_weight="1"
             android:layout_marginStart="16dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:visibility="visible"
             android:text="Dừng trừ"/>
+        <Button
+            android:id="@+id/btnRededuct"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Chay lại trừ"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -115,17 +132,33 @@
         android:orientation="horizontal"
         >
         <Button
-            android:id="@+id/dungnhan"
+            android:id="@+id/btnStopMultiplication"
             android:layout_weight="1"
             android:layout_width="0dp"
+            android:visibility="visible"
             android:layout_height="wrap_content"
             android:text="Dừng nhân"/>
         <Button
-            android:id="@+id/dungrandom"
+            android:id="@+id/btnRemultiplication"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Chạy lại nhân"/>
+        <Button
+            android:id="@+id/btnStopRandom"
             android:layout_weight="1"
             android:layout_marginStart="16dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Dừng random"/>
+        <Button
+            android:id="@+id/btnRandom"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Chạy lại random"/>
     </LinearLayout>
 </LinearLayout>
